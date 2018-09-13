@@ -1,12 +1,188 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+	<title>index</title>
+
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="jquery.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+	<script type="text/javascript">
+		$(function () {
+			$('pre code').each(function (i, block) {
+				//空格替换成 &nbsp;
+				var code = $(block).html().replace(/ /g, '&nbsp;');
+				$(block).html(code)
+				hljs.highlightBlock(block);
+			});
+		});
+	</script>
+
 </head>
+
 <body>
-    test
+	<div class="markdown-body">
+		<p>最近在 github 上看到不不优秀的收藏清单，自己也准备整理一份专属自己的清单</p>
+
+		<h2 id="toc_0">代码质量</h2>
+
+		<h3 id="toc_1">规范</h3>
+
+		<ul>
+			<li><a href="https://github.com/google/styleguide/blob/gh-pages/docguide/style.md">google markdown 规范</a></li>
+			<li><a href="http://www.css88.com/archives/8345">Airbnb JavaScript 编码规范(涵盖 ECMAScript 6+) – WEB前端开发 - 专注前端开发，关注用户体验</a></li>
+			<li><a href="https://link.juejin.im/?target=https%3A%2F%2Fgithub.com%2Fouvens%2Fes6-code-style-guide">EcmaScript6
+					全规范（含node）</a></li>
+			<li><a href="https://link.juejin.im?target=https%3A%2F%2Fgithub.com%2Frwaldron%2Fidiomatic.js%2Ftree%2Fmaster%2Ftranslations%2Fzh_CN">书写具备一致风格、通俗易懂
+					JavaScript 的原则</a></li>
+			<li><a href="https://link.juejin.im?target=https%3A%2F%2Fcn.vuejs.org%2Fv2%2Fstyle-guide%2F">Vue.js 风格指南</a></li>
+			<li><a href="https://link.juejin.im?target=https%3A%2F%2Fgithub.com%2Fpablohpsilva%2Fvuejs-component-style-guide%2Fblob%2Fmaster%2FREADME-CN.md">Vue.js
+					组件编码规范</a></li>
+		</ul>
+
+		<h3 id="toc_2">工具</h3>
+
+		<ul>
+			<li><a href="https://link.juejin.im?target=www.css88.com%2Fdoc%2Fjsdoc%2F">JSDoc 中文文档</a></li>
+		</ul>
+
+		<h2 id="toc_3">牛人</h2>
+
+		<h3 id="toc_4">学习参考</h3>
+
+		<ul>
+			<li><a href="zotero://open-pdf/0_QNFWDCAJ/10">如何学习高阶模型？请收好，这里有一份智者清单</a></li>
+		</ul>
+
+		<h3 id="toc_5">赫伯特·西蒙(Herbert A.Simon，1916～2001)</h3>
+
+		<ul>
+			<li>
+				<p><strong>论文</strong></p>
+			</li>
+		</ul>
+
+		<ol>
+			<li><a href="zotero://open-pdf/0_QNFWDCAJ/10">为什么一图胜万言（Why a Diagram is (Sometimes) Worth Ten Thousand Words）</a></li>
+		</ol>
+
+		<h3 id="toc_6">Jacob Barnett</h3>
+
+		<ul>
+			<li><strong>简介</strong></li>
+		</ul>
+
+		<p>雅各布·巴尼特（印第安纳波利斯，印第安纳州，26 5月 1998年）</p>
+
+		<p>Jacob Barnett 8 岁自学大学课程，10 岁被知名大学录取，15 岁时进入世界顶尖物理研究所攻读量子物理硕士学位，而他 2 岁时却曾被诊断为智力有缺陷。做这个演讲时 Jacob 仅 13 岁，已是国际物理学家</p>
+
+		<ul>
+			<li><strong>相关信息</strong></li>
+		</ul>
+
+		<p>(1)<a href="https://www.bilibili.com/video/av28781700">Ted：Forget what you know</a></p>
+
+		<h2 id="toc_7">写作</h2>
+
+		<h3 id="toc_8">方法</h3>
+
+		<ul>
+			<li><a href="https://homes.cs.washington.edu/%7Emernst/advice/write-technical-paper.html">How to write a technical
+					paper</a></li>
+		</ul>
+
+		<h2 id="toc_9">学习资源</h2>
+
+		<h3 id="toc_10">前端</h3>
+
+		<ul>
+			<li><a href="http://www.dailichun.com/2018/01/21/js_singlethread_eventloop.html">！！！从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理 |
+					Dailc的个人主页</a></li>
+			<li><a href="https://github.com/webproblem/learning-article/blob/master/README.md">超多前端学习资源</a></li>
+		</ul>
+
+		<h3 id="toc_11">JS</h3>
+
+		<ul>
+			<li><a href="https://github.com/Troland/how-javascript-works">译：国外 JS 原理系列教程（图文并茂）——@sessionstack</a></li>
+			<li><a href="https://github.com/es6-org/exploring-es6/blob/master/md/index.md">译：国外ES6好书-exploring-es6/index.md at
+					master · es6-org/exploring-es6</a></li>
+		</ul>
+
+		<h3 id="toc_12">Vue.js</h3>
+
+		<ul>
+			<li><a href="http://www.html5dw.com/post/5570">Vue.js经典开源项目汇总 – HTML5梦工场</a></li>
+		</ul>
+
+		<h3 id="toc_13">Node.js</h3>
+
+		<ul>
+			<li><a href="http://blog.fens.me/series-nodejs/">从零开始nodejs系列文章 | 粉丝日志</a></li>
+			<li><a href="http://blog.fens.me/nodejs-roadmap/">Nodejs学习路线图 | 粉丝日志</a></li>
+			<li><a href="https://github.com/alsotang/node-lessons">Node.js 包教不包会</a></li>
+			<li><a href="https://github.com/chyingp/nodejs-learning-guide">chyingp/nodejs-learning-guide:
+					Nodejs学习笔记以及经验总结，公众号&quot;程序猿小卡&quot;</a></li>
+			<li><a href="https://github.com/parro-it/awesome-micro-npm-packages">github 优秀 Modules 清单</a></li>
+			<li><a href="https://scotch.io/tutorials?hFR%5Bcategory%5D%5B0%5D=Tutorials&amp;dFR%5B_tags%5D%5B0%5D=node.js">极好的国外
+					Node 教程</a></li>
+			<li><a href="https://github.com/ElemeFE/node-interview/blob/master/sections/zh-cn/common.md#%E7%B1%BB%E5%9E%8B%E5%88%A4%E6%96%AD">饿了么：node-interview</a></li>
+			<li><a href="https://zhuanlan.zhihu.com/p/25736931">如何分析 Node.js 中的内存泄漏</a></li>
+		</ul>
+
+		<h2 id="toc_14">微信</h2>
+
+		<ul>
+			<li><a href="https://juejin.im/post/5b8fd1416fb9a05cf3710690?utm_source=gold_browser_extension#heading-38">近两万字小程序攻略发布了
+					- 掘金</a></li>
+		</ul>
+
+		<h2 id="toc_15">学习方法</h2>
+
+		<h3 id="toc_16">编程</h3>
+
+		<ul>
+			<li><a href="https://lifehacker.com/top-10-ways-to-teach-yourself-to-code-1684250889">https://lifehacker.com/top-10-ways-to-teach-yourself-to-code-1684250889</a></li>
+		</ul>
+
+		<h2 id="toc_17">开源类库</h2>
+
+		<h3 id="toc_18">node.js</h3>
+
+		<h4 id="toc_19">jieba 中文分词库</h4>
+
+		<p>在现在开源的分词工具里面，<a href="https://github.com/fxsjy/jieba">jieba</a>是一个功能强大性能优越的分词组件，更幸运地是，它有 <a href="https://github.com/yanyiwu/nodejieba">node
+				版本</a>。</p>
+
+		<blockquote>
+			<p><a href="https://www.h5jun.com/post/segment-with-nodejs.html">使用 Node.js 对文本内容分词和关键词抽取 - 十年踪迹的博客</a></p>
+		</blockquote>
+
+		<h2 id="toc_20">工具</h2>
+
+		<h3 id="toc_21">VSCode</h3>
+
+		<ul>
+			<li>Node exec：允许你用Node执行当前文件或者选中的代码</li>
+			<li>Live Server：开启本地开发时服务器，为静态和动态页面提供实时刷新功能</li>
+		</ul>
+
+		<h2 id="toc_22">好书</h2>
+
+		<p><a href="https://www.youtube.com/watch?v=SwY3A92s-xg">10 Books EVERY Student Should Read - 2017 Book
+				Recommendations</a></p>
+
+		<h2 id="toc_23">ChangeLog</h2>
+
+		<ul>
+			<li>2018-08-10 创建</li>
+		</ul>
+
+	</div>
 </body>
+
 </html>
